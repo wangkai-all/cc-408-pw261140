@@ -1,0 +1,23 @@
+{
+  "name": "event-quality-settlement",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Event-level traffic-quality gating, versioned rules, immutable settlement and diff approval — end-to-end over synthetic data.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "init": "node scripts/cli.mjs init",
+    "seed": "node scripts/cli.mjs seed",
+    "ingest": "node scripts/cli.mjs ingest",
+    "worker": "node scripts/cli.mjs worker",
+    "worker:decisions": "node scripts/cli.mjs worker --lane decisions",
+    "worker:analysis": "node scripts/cli.mjs worker --lane analysis",
+    "settle": "node scripts/cli.mjs settle",
+    "web": "node scripts/cli.mjs web",
+    "demo": "node scripts/cli.mjs demo",
+    "reset": "node scripts/cli.mjs reset",
+    "test": "node --test \"test/**/*.test.mjs\""
+  }
+}

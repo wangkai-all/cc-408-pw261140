@@ -4,6 +4,7 @@
 !.env.example
 node_modules/
 .venv/
+var/
 __pycache__/
 .claude/
 .cc-workbench/
